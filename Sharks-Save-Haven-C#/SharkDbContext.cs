@@ -11,7 +11,6 @@ public class SharkDbContext : DbContext {
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Game>().HasData(
-            new Game { Id = 1, Title = "Cheese" });
+        modelBuilder.Entity<Game>();
     }
 }
